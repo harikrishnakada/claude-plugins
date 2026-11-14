@@ -1,0 +1,12 @@
+{
+  "name": "site-workflow",
+  "description": "UX gate for every visitor-facing change (evidence vs preference, sized review, scripted verification, decisions log), a setup skill that tailors it to any website repo, and a review-intake skill for outside feedback. Installs impeccable for design craft.",
+  "version": "1.1.0",
+  "author": {
+    "name": "Hari K"
+  },
+  "skills": "./skills/",
+  "dependencies": [
+    { "name": "impeccable", "marketplace": "impeccable" }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "claude-workflow",
+  "metadata": {
+    "description": "How we plan, review, build and verify website work with Claude, packaged for any project."
+  },
+  "owner": {
+    "name": "Hari K"
+  },
+  "allowCrossMarketplaceDependenciesOn": ["impeccable"],
+  "plugins": [
+    {
+      "name": "site-workflow",
+      "description": "UX gate for every visitor-facing change (evidence vs preference, sized review, scripted verification, decisions log), a setup skill that tailors it to any website repo, and a review-intake skill for outside feedback. Installs impeccable for design craft.",
+      "version": "1.1.0",
+      "source": "./plugins/site-workflow",
+      "category": "design",
+      "tags": ["ux", "accessibility", "workflow", "website", "review"],
+      "dependencies": [
+        { "name": "impeccable", "marketplace": "impeccable" }
+      ]
+    }
+  ]
+}

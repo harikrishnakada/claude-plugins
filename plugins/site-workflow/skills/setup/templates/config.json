@@ -1,0 +1,23 @@
+{
+  "appDir": ".",
+  "baseUrl": "http://localhost:3000",
+  "previewConfig": "web",
+  "regress": ["/"],
+  "noise": [],
+  "tokenContrast": {
+    "files": ["src/styles/globals.css"],
+    "pairs": [
+      ["--foreground", "--background", 4.5, "body text"],
+      ["--muted-foreground", "--background", 4.5, "secondary text"],
+      ["--primary-foreground", "--primary", 4.5, "button labels"]
+    ]
+  },
+  "commands": {
+    "typecheck": "npx tsc --noEmit -p .",
+    "lint": "npm run lint",
+    "build": "npm run build",
+    "start": "npm run start -- -p 3124"
+  },
+  "decisionsLog": "docs/design/decisions.md",
+  "plansDir": "tasks"
+}
